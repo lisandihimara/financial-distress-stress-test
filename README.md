@@ -55,11 +55,13 @@ as bankrupt.
 A small number of individual predictions did flip class under stress
 (4 at 10–20%, 3 at 30%) — small enough to wash out in the aggregate
 recall number. More notably, the model's underlying predicted bankruptcy
-*probability* rose steadily with stress even where the final class label
-didn't change: mean predicted risk across the test set rose ~54%
-relative (2.9% → 4.6%), and rose consistently among firms that were
-actually bankrupt. A model that looks stable by its classification
-output alone can still be quietly revising its risk assessment upward.
+*probability* rose with stress even where the final class label didn't
+change: mean predicted risk across the full test set rose ~54% relative
+(2.9% → 4.5%). Among firms that were actually bankrupt, mean predicted
+risk rose from 28.3% at baseline to ~29.3% by 10% stress, then plateaued
+(29.4% at 20%, 29.3% at 30%) rather than continuing to climb. A model
+that looks stable by its classification output alone can still be
+quietly revising its risk assessment upward.
 
 ## Limitations
 - This is a simulated stress scenario, not evidence of real-world crisis behavior.
